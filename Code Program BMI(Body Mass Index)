@@ -1,0 +1,31 @@
+public class MyBMI_code {
+    private double hb,wb,ttl;
+    private String inf;
+    public double getTtl() {
+        return ttl = this.wb / (this.hb * this.hb);
+    }
+
+    public String getInf() {
+        return inf;
+        
+    }
+
+    public void setHb(double hb) {
+        this.hb = hb/100;
+    }
+
+    public void setWb(double wb) {
+        this.wb = wb;
+    }
+   void hasilinf(){
+       if (getTtl() < 18.5){
+           this.inf = "Anda Memiliki Masalah Kekurangan Berat Badan";
+       }else if(getTtl() < 24.9){
+           this.inf = "Anda Memiliki Berat Badan Ideal";
+       }else if(getTtl() < 29.9){
+           this.inf = "Anda Memiliki Berat Badan Berlebih";
+       }else if(getTtl() > 30.0){
+           this.inf = "Anda Memiliki Penyakit Obesitas";
+       }
+   }
+}
