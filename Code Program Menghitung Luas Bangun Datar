@@ -1,0 +1,41 @@
+public class Coding_Luas {
+    private double JariL,AlasS,TinggiS,SisiP,HPer,HSgt,HLing;
+    private String notice;
+    public double getHPer() {
+        return HPer = this.SisiP*this.SisiP;
+    }public double getHSgt() {
+        return HSgt = 0.5*(this.AlasS*this.TinggiS);
+    }public String getNotice() {
+        return notice;
+    }
+    public double getHLing() {
+        return HLing = 3.14*(this.JariL*this.JariL);
+    }
+
+    public void setAlasS(double AlasS) {
+        this.AlasS = AlasS;
+    }
+
+    public void setTinggiS(double TinggiS) {
+        this.TinggiS = TinggiS;
+    }
+
+    public void setSisiP(double SisiP) {
+        this.SisiP = SisiP;
+    }public void setJariL(double JariL) {
+        this.JariL = JariL;
+    }void HasiltotL(){
+        if(getHLing() > 0){
+          this.notice =  "Luas Lingkaran dengan Jari-Jari "+this.JariL+" Adalah "+ getHLing();
+        }
+    }void HasiltotP(){
+        if (getHPer() > 0){
+            this.notice = "Luas Persegi dengan Sisi "+this.SisiP+" Adalah "+ getHPer();
+        }
+    }void HasiltotS(){
+        if (getHSgt() > 0){
+            this.notice = "Luas Segitiga dengan Alas "+this.AlasS+" dan Tinggi "+this.TinggiS+" Adalah " + getHSgt();
+        }
+    }
+ 
+}
